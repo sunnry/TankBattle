@@ -99,6 +99,12 @@
 		A3BB0F941BDB959C008D8C1A /* TankBattle */ = {
 			isa = PBXGroup;
 			children = (
+				A3F8CD571BDD0C120019C58C /* Scenes */,
+				A3F8CD581BDD0C450019C58C /* Entities */,
+				A3F8CD591BDD0F5B0019C58C /* Components */,
+				A3F8CD5A1BDD10CE0019C58C /* Nodes */,
+				A3F8CD5B1BDD10DA0019C58C /* Rules */,
+				A3F8CD5C1BDD10E20019C58C /* Behaviors */,
 				A3BB0FC81BDB961A008D8C1A /* Assets */,
 				A3BB0FC71BDB95E8008D8C1A /* iOS */,
 			);
@@ -176,6 +182,48 @@
 			children = (
 			);
 			name = TaskTank;
+			sourceTree = "<group>";
+		};
+		A3F8CD571BDD0C120019C58C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		A3F8CD581BDD0C450019C58C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A3F8CD591BDD0F5B0019C58C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		A3F8CD5A1BDD10CE0019C58C /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		A3F8CD5B1BDD10DA0019C58C /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Rules;
+			sourceTree = "<group>";
+		};
+		A3F8CD5C1BDD10E20019C58C /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Behaviors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,6 +588,7 @@
 				A3BB0FC01BDB959D008D8C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3BB0FC11BDB959D008D8C1A /* Build configuration list for PBXNativeTarget "TankBattleTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +597,7 @@
 				A3BB0FC31BDB959D008D8C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3BB0FC41BDB959D008D8C1A /* Build configuration list for PBXNativeTarget "TankBattleUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +606,7 @@
 				A3BB0FC61BDB959D008D8C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
