@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3579D051BDDBE1B004F9020 /* Level1.sks */; };
+		A3579D081BDDC0F8004F9020 /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3579D071BDDC0F8004F9020 /* common.xcassets */; };
+		A3579D481BDDCCDE004F9020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3579D471BDDCCDE004F9020 /* Assets.xcassets */; };
 		A3BB0F961BDB959C008D8C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */; };
 		A3BB0F981BDB959C008D8C1A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0F971BDB959C008D8C1A /* GameScene.sks */; };
 		A3BB0F9A1BDB959D008D8C1A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F991BDB959D008D8C1A /* GameScene.swift */; };
@@ -15,6 +18,8 @@
 		A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0FA21BDB959D008D8C1A /* LaunchScreen.storyboard */; };
 		A3BB0FAF1BDB959D008D8C1A /* TankBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0FAE1BDB959D008D8C1A /* TankBattleTests.swift */; };
 		A3BB0FBA1BDB959D008D8C1A /* TankBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0FB91BDB959D008D8C1A /* TankBattleUITests.swift */; };
+		A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */; };
+		A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3579D051BDDBE1B004F9020 /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
+		A3579D071BDDC0F8004F9020 /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
+		A3579D471BDDCCDE004F9020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3BB0F921BDB959C008D8C1A /* TankBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TankBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TankBattle/AppDelegate.swift; sourceTree = "<group>"; };
 		A3BB0F971BDB959C008D8C1A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = TankBattle/GameScene.sks; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		A3BB0FB51BDB959D008D8C1A /* TankBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TankBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BB0FB91BDB959D008D8C1A /* TankBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankBattleUITests.swift; sourceTree = "<group>"; };
 		A3BB0FBB1BDB959D008D8C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerTank.xcassets; sourceTree = "<group>"; };
+		A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NormalTaskTank.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,7 @@
 		A3BB0FC81BDB961A008D8C1A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A3579D471BDDCCDE004F9020 /* Assets.xcassets */,
 				A3BB0FCA1BDB97EC008D8C1A /* Scenes */,
 				A3BB0FCB1BDB98BE008D8C1A /* Level1 */,
 				A3BB0FCD1BDB98F0008D8C1A /* TaskTank */,
@@ -159,6 +170,7 @@
 		A3BB0FCA1BDB97EC008D8C1A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A3579D071BDDC0F8004F9020 /* common.xcassets */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -166,6 +178,7 @@
 		A3BB0FCB1BDB98BE008D8C1A /* Level1 */ = {
 			isa = PBXGroup;
 			children = (
+				A3579D051BDDBE1B004F9020 /* Level1.sks */,
 			);
 			name = Level1;
 			sourceTree = "<group>";
@@ -173,6 +186,7 @@
 		A3BB0FCC1BDB98D4008D8C1A /* PlayerTank */ = {
 			isa = PBXGroup;
 			children = (
+				A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */,
 			);
 			name = PlayerTank;
 			sourceTree = "<group>";
@@ -180,6 +194,7 @@
 		A3BB0FCD1BDB98F0008D8C1A /* TaskTank */ = {
 			isa = PBXGroup;
 			children = (
+				A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */,
 			);
 			name = TaskTank;
 			sourceTree = "<group>";
@@ -330,8 +345,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3579D081BDDC0F8004F9020 /* common.xcassets in Resources */,
 				A3BB0F981BDB959C008D8C1A /* GameScene.sks in Resources */,
 				A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */,
+				A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */,
+				A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */,
+				A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */,
+				A3579D481BDDCCDE004F9020 /* Assets.xcassets in Resources */,
 				A3BB0F9F1BDB959D008D8C1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
