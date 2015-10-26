@@ -10,6 +10,12 @@
 		A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3579D051BDDBE1B004F9020 /* Level1.sks */; };
 		A3579D081BDDC0F8004F9020 /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3579D071BDDC0F8004F9020 /* common.xcassets */; };
 		A3579D481BDDCCDE004F9020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3579D471BDDCCDE004F9020 /* Assets.xcassets */; };
+		A3579D4B1BDDD7E2004F9020 /* GameConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D4A1BDDD7E2004F9020 /* GameConfiguration.swift */; };
+		A3579D4D1BDDDF3A004F9020 /* TouchControlInputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D4C1BDDDF3A004F9020 /* TouchControlInputNode.swift */; };
+		A3579D4F1BDDE0A6004F9020 /* ThumbStickNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D4E1BDDE0A6004F9020 /* ThumbStickNode.swift */; };
+		A3579D521BDDE8AE004F9020 /* ControlInputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D511BDDE8AE004F9020 /* ControlInputSource.swift */; };
+		A3579D541BDDF465004F9020 /* GameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D531BDDF465004F9020 /* GameInput.swift */; };
+		A3579D561BDDF50F004F9020 /* GameControllerInputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D551BDDF50F004F9020 /* GameControllerInputSource.swift */; };
 		A3BB0F961BDB959C008D8C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */; };
 		A3BB0F981BDB959C008D8C1A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0F971BDB959C008D8C1A /* GameScene.sks */; };
 		A3BB0F9A1BDB959D008D8C1A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F991BDB959D008D8C1A /* GameScene.swift */; };
@@ -43,6 +49,12 @@
 		A3579D051BDDBE1B004F9020 /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
 		A3579D071BDDC0F8004F9020 /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
 		A3579D471BDDCCDE004F9020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3579D4A1BDDD7E2004F9020 /* GameConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameConfiguration.swift; sourceTree = "<group>"; };
+		A3579D4C1BDDDF3A004F9020 /* TouchControlInputNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchControlInputNode.swift; sourceTree = "<group>"; };
+		A3579D4E1BDDE0A6004F9020 /* ThumbStickNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbStickNode.swift; sourceTree = "<group>"; };
+		A3579D511BDDE8AE004F9020 /* ControlInputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlInputSource.swift; sourceTree = "<group>"; };
+		A3579D531BDDF465004F9020 /* GameInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInput.swift; sourceTree = "<group>"; };
+		A3579D551BDDF50F004F9020 /* GameControllerInputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControllerInputSource.swift; sourceTree = "<group>"; };
 		A3BB0F921BDB959C008D8C1A /* TankBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TankBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TankBattle/AppDelegate.swift; sourceTree = "<group>"; };
 		A3BB0F971BDB959C008D8C1A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = TankBattle/GameScene.sks; sourceTree = "<group>"; };
@@ -86,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3579D491BDDD790004F9020 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A3579D4A1BDDD7E2004F9020 /* GameConfiguration.swift */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		A3579D501BDDE865004F9020 /* Player Control */ = {
+			isa = PBXGroup;
+			children = (
+				A3579D511BDDE8AE004F9020 /* ControlInputSource.swift */,
+				A3579D531BDDF465004F9020 /* GameInput.swift */,
+				A3579D551BDDF50F004F9020 /* GameControllerInputSource.swift */,
+			);
+			name = "Player Control";
+			sourceTree = "<group>";
+		};
 		A3BB0F891BDB959C008D8C1A = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +139,8 @@
 		A3BB0F941BDB959C008D8C1A /* TankBattle */ = {
 			isa = PBXGroup;
 			children = (
+				A3579D501BDDE865004F9020 /* Player Control */,
+				A3579D491BDDD790004F9020 /* Configurations */,
 				A3F8CD571BDD0C120019C58C /* Scenes */,
 				A3F8CD581BDD0C450019C58C /* Entities */,
 				A3F8CD591BDD0F5B0019C58C /* Components */,
@@ -223,6 +255,8 @@
 		A3F8CD5A1BDD10CE0019C58C /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				A3579D4C1BDDDF3A004F9020 /* TouchControlInputNode.swift */,
+				A3579D4E1BDDE0A6004F9020 /* ThumbStickNode.swift */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -377,9 +411,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3579D4B1BDDD7E2004F9020 /* GameConfiguration.swift in Sources */,
+				A3579D4D1BDDDF3A004F9020 /* TouchControlInputNode.swift in Sources */,
 				A3BB0F9A1BDB959D008D8C1A /* GameScene.swift in Sources */,
+				A3579D4F1BDDE0A6004F9020 /* ThumbStickNode.swift in Sources */,
+				A3579D541BDDF465004F9020 /* GameInput.swift in Sources */,
 				A3BB0F9C1BDB959D008D8C1A /* GameViewController.swift in Sources */,
+				A3579D561BDDF50F004F9020 /* GameControllerInputSource.swift in Sources */,
 				A3BB0F961BDB959C008D8C1A /* AppDelegate.swift in Sources */,
+				A3579D521BDDE8AE004F9020 /* ControlInputSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

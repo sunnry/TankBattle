@@ -9,11 +9,29 @@
 import UIKit
 import SpriteKit
 
+//notes: the show sequences as bellow:
+//  SkNode<-SkScene<-SkView<-ViewController
+
+
+
+
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let skView = view as! SKView
+        
+        let viewSize = view.bounds.size
+        let controlLength = min(GameConfiguration.TouchControl.minimumControlSize, GameConfiguration.TouchControl.idealRelativeControlSizeRate * viewSize.width)
+        
+        let controlSize = CGSize(width: controlLength, height: controlLength)
+        
+        
+        let touchControlInputNode = TouchControlInputNode(frame: view.bounds, thumbStickNodeSize: controlSize)
+        
+        let gameInput = GameInput(nativeControlInputSource: touchControlInputNode)
+        
     }
 
     override func shouldAutorotate() -> Bool {
