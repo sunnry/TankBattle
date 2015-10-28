@@ -16,6 +16,8 @@ import SpriteKit
 
 
 class GameViewController: UIViewController {
+    
+    var sceneManager:SceneManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,11 @@ class GameViewController: UIViewController {
         let touchControlInputNode = TouchControlInputNode(frame: view.bounds, thumbStickNodeSize: controlSize)
         
         let gameInput = GameInput(nativeControlInputSource: touchControlInputNode)
+        
+        
+        sceneManager = SceneManager(presentingView: skView, gameInput: gameInput)
+        
+        //sceneManager.transitionToSceneWithSceneIdentifier(.Home)
         
     }
 

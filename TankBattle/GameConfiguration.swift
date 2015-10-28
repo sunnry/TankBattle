@@ -22,4 +22,8 @@ struct GameConfiguration {
         static let idealRelativeControlSizeRate:CGFloat = 0.15
         
     }
+    
+    struct SceneManager {
+        static let transitionDuration: NSTimeInterval = 2.0
+    }
 }
