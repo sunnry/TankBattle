@@ -37,7 +37,7 @@ class GameViewController: UIViewController {
         
         sceneManager = SceneManager(presentingView: skView, gameInput: gameInput)
         
-        //sceneManager.transitionToSceneWithSceneIdentifier(.Home)
+        sceneManager.transitionToSceneWithSceneIdentifier(.Home)
         
     }
 

@@ -40,8 +40,6 @@
 		A3579D741BDE0D4D004F9020 /* BaseScene+Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D731BDE0D4D004F9020 /* BaseScene+Buttons.swift */; };
 		A3579D761BDE0DDA004F9020 /* BaseScene+Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3579D751BDE0DDA004F9020 /* BaseScene+Focus.swift */; };
 		A3BB0F961BDB959C008D8C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */; };
-		A3BB0F981BDB959C008D8C1A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0F971BDB959C008D8C1A /* GameScene.sks */; };
-		A3BB0F9A1BDB959D008D8C1A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F991BDB959D008D8C1A /* GameScene.swift */; };
 		A3BB0F9C1BDB959D008D8C1A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0F9B1BDB959D008D8C1A /* GameViewController.swift */; };
 		A3BB0F9F1BDB959D008D8C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0F9D1BDB959D008D8C1A /* Main.storyboard */; };
 		A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0FA21BDB959D008D8C1A /* LaunchScreen.storyboard */; };
@@ -103,8 +101,6 @@
 		A3579D751BDE0DDA004F9020 /* BaseScene+Focus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseScene+Focus.swift"; sourceTree = "<group>"; };
 		A3BB0F921BDB959C008D8C1A /* TankBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TankBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TankBattle/AppDelegate.swift; sourceTree = "<group>"; };
-		A3BB0F971BDB959C008D8C1A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = TankBattle/GameScene.sks; sourceTree = "<group>"; };
-		A3BB0F991BDB959D008D8C1A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = TankBattle/GameScene.swift; sourceTree = "<group>"; };
 		A3BB0F9B1BDB959D008D8C1A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = TankBattle/GameViewController.swift; sourceTree = "<group>"; };
 		A3BB0F9E1BDB959D008D8C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3BB0FA31BDB959D008D8C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -262,8 +258,6 @@
 				A3BB0FA21BDB959D008D8C1A /* LaunchScreen.storyboard */,
 				A3BB0F9D1BDB959D008D8C1A /* Main.storyboard */,
 				A3BB0F9B1BDB959D008D8C1A /* GameViewController.swift */,
-				A3BB0F991BDB959D008D8C1A /* GameScene.swift */,
-				A3BB0F971BDB959C008D8C1A /* GameScene.sks */,
 				A3BB0F951BDB959C008D8C1A /* AppDelegate.swift */,
 			);
 			name = iOS;
@@ -474,7 +468,6 @@
 			files = (
 				A3579D081BDDC0F8004F9020 /* common.xcassets in Resources */,
 				A304BA0A1BE09D170082854C /* HomeScene.sks in Resources */,
-				A3BB0F981BDB959C008D8C1A /* GameScene.sks in Resources */,
 				A304BA031BE06B130082854C /* SceneConfiguration.plist in Resources */,
 				A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */,
 				A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */,
@@ -518,7 +511,6 @@
 				A304BA071BE097C60082854C /* LevelScene.swift in Sources */,
 				A3579D591BDDF7F6004F9020 /* SceneManager.swift in Sources */,
 				A3579D5F1BDDFC4B004F9020 /* SceneLoader.swift in Sources */,
-				A3BB0F9A1BDB959D008D8C1A /* GameScene.swift in Sources */,
 				A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */,
 				A3579D5B1BDDF874004F9020 /* SceneMetadata.swift in Sources */,
 				A3579D4F1BDDE0A6004F9020 /* ThumbStickNode.swift in Sources */,

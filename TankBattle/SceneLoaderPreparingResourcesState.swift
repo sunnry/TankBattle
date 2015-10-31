@@ -107,8 +107,9 @@ class SceneLoaderPreparingResourcesState: GKState {
             // Enter the next state on the main queue.
             dispatch_async(dispatch_get_main_queue()) {
                 self.sceneLoader.scene = loadSceneOperation.scene
-                
+                                
                 let didEnterReadyState = self.stateMachine!.enterState(SceneLoaderResourcesReadyState.self)
+                
                 assert(didEnterReadyState, "Failed to transition to `ReadyState` after resources were prepared.")
             }
         }

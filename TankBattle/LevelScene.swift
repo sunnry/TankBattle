@@ -42,4 +42,10 @@ enum WorldLayer: CGFloat {
 
 class LevelScene: BaseScene{
     
+    override func didMoveToView(view: SKView) {
+        super.didMoveToView(view)
+        
+        print("show level scene")
+        
+    }
 }

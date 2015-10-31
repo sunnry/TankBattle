@@ -141,10 +141,17 @@ class SceneLoader {
      download the `sceneLoader`'s scene.
      */
     func downloadResourcesIfNecessary() {
+        
+        
         if sceneMetadata.requiresOnDemandResources {
             stateMachine.enterState(SceneLoaderDownloadingResourcesState.self)
         }
         else {
+            //if stateMachine has already go into preparing state, do not let it go
+            //into available state directly.
+            if stateMachine.currentState is SceneLoaderPreparingResourcesState{
+                    return
+            }
             stateMachine.enterState(SceneLoaderResourcesAvailableState.self)
         }
     }
