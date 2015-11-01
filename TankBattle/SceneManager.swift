@@ -22,6 +22,7 @@ final class SceneManager {
     
     enum SceneIdentifier {
         case Home, End
+        case SelectLevel
         case CurrentLevel, NextLevel
         case Level(Int)
     }
@@ -309,6 +310,8 @@ final class SceneManager {
         switch sceneIdentifier {
         case .Home:
             sceneMetadata = sceneConfigurationInfo.first!
+        case .SelectLevel:
+            sceneMetadata = sceneConfigurationInfo[1]
             
         case .CurrentLevel:
             guard let currentSceneMetadata = currentSceneMetadata else {

@@ -53,6 +53,9 @@ struct SceneMetadata {
             case "LevelScene":
                 sceneType = LevelScene.self
             
+            case "SelectLevelScene":
+                sceneType = SelectLevelScene.self
+            
             case "HomeEndScene":
                 sceneType = HomeEndScene.self
             

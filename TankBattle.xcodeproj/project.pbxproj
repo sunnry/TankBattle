@@ -45,6 +45,8 @@
 		A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0FA21BDB959D008D8C1A /* LaunchScreen.storyboard */; };
 		A3BB0FAF1BDB959D008D8C1A /* TankBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0FAE1BDB959D008D8C1A /* TankBattleTests.swift */; };
 		A3BB0FBA1BDB959D008D8C1A /* TankBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0FB91BDB959D008D8C1A /* TankBattleUITests.swift */; };
+		A3F87C4D1BE5EBFF00C685CB /* SelectLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */; };
+		A3F87C501BE5ECFC00C685CB /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */; };
 		A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */; };
 		A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */; };
 /* End PBXBuildFile section */
@@ -111,6 +113,8 @@
 		A3BB0FB51BDB959D008D8C1A /* TankBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TankBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BB0FB91BDB959D008D8C1A /* TankBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankBattleUITests.swift; sourceTree = "<group>"; };
 		A3BB0FBB1BDB959D008D8C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelScene.swift; sourceTree = "<group>"; };
+		A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectLevelScene.sks; sourceTree = "<group>"; };
 		A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerTank.xcassets; sourceTree = "<group>"; };
 		A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NormalTaskTank.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				A304BA081BE09CDE0082854C /* HomeScene */,
+				A3F87C4E1BE5ECBA00C685CB /* SelectLevelScene */,
 				A3579D471BDDCCDE004F9020 /* Assets.xcassets */,
 				A3BB0FCA1BDB97EC008D8C1A /* Scenes */,
 				A3BB0FCB1BDB98BE008D8C1A /* Level1 */,
@@ -311,11 +316,20 @@
 			name = TaskTank;
 			sourceTree = "<group>";
 		};
+		A3F87C4E1BE5ECBA00C685CB /* SelectLevelScene */ = {
+			isa = PBXGroup;
+			children = (
+				A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */,
+			);
+			name = SelectLevelScene;
+			sourceTree = "<group>";
+		};
 		A3F8CD571BDD0C120019C58C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				A3579D5C1BDDF945004F9020 /* BaseScene.swift */,
 				A304BA041BE097700082854C /* HomeEndScene.swift */,
+				A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */,
 				A304BA061BE097C60082854C /* LevelScene.swift */,
 				A3579D6F1BDE0896004F9020 /* SceneOverlay.swift */,
 				A3579D731BDE0D4D004F9020 /* BaseScene+Buttons.swift */,
@@ -471,6 +485,7 @@
 				A304BA031BE06B130082854C /* SceneConfiguration.plist in Resources */,
 				A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */,
 				A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */,
+				A3F87C501BE5ECFC00C685CB /* SelectLevelScene.sks in Resources */,
 				A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */,
 				A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */,
 				A3579D481BDDCCDE004F9020 /* Assets.xcassets in Resources */,
@@ -510,6 +525,7 @@
 				A3579D741BDE0D4D004F9020 /* BaseScene+Buttons.swift in Sources */,
 				A304BA071BE097C60082854C /* LevelScene.swift in Sources */,
 				A3579D591BDDF7F6004F9020 /* SceneManager.swift in Sources */,
+				A3F87C4D1BE5EBFF00C685CB /* SelectLevelScene.swift in Sources */,
 				A3579D5F1BDDFC4B004F9020 /* SceneLoader.swift in Sources */,
 				A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */,
 				A3579D5B1BDDF874004F9020 /* SceneMetadata.swift in Sources */,

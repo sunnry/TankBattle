@@ -55,9 +55,10 @@ class HomeEndScene: BaseScene {
         registerForNotifications()
         centerCameraOnPoint(backgroundNode!.position)
         
-        // Begin loading the first level as soon as the view appears.
-        sceneManager.prepareSceneWithSceneIdentifier(.Level(1))
+        // Begin loading Level Select Scene as soon as the view appears.
+        sceneManager.transitionToSceneWithSceneIdentifier(.SelectLevel)
         
+        /*
         let levelLoader = sceneManager.sceneLoaderForSceneIdentifier(.Level(1))
         
         // If the first level is not ready, hide the buttons until we are notified.
@@ -68,6 +69,7 @@ class HomeEndScene: BaseScene {
             screenRecorderButton?.alpha = 0.0
             screenRecorderButton?.userInteractionEnabled = false
         }
+        */
     }
     
     func registerForNotifications() {
