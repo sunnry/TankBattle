@@ -76,6 +76,8 @@ final class SceneManager {
     /// An object to act as the observer for `SceneLoaderDidCompleteNotification`s.
     private var loadingCompletedObserver: AnyObject?
     
+    var levelSceneArray:[String]!
+    
     // MARK: Initialization
     
     init(presentingView: SKView, gameInput: GameInput) {
@@ -95,6 +97,13 @@ final class SceneManager {
         */
         sceneConfigurationInfo = scenes.map {
             SceneMetadata(sceneConfiguration: $0)
+        }
+        
+        levelSceneArray = [String]()
+        for metadata in sceneConfigurationInfo{
+            if metadata.sceneType is LevelScene.Type{
+                levelSceneArray.append(metadata.fileName)
+            }
         }
         
         // Map `SceneMetadata` to a `SceneLoader` for each possible scene.
