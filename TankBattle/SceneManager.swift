@@ -329,7 +329,7 @@ final class SceneManager {
             sceneMetadata = currentSceneMetadata
             
         case .Level(let number):
-            sceneMetadata = sceneConfigurationInfo[number]
+            sceneMetadata = sceneConfigurationInfo[number+1]
             
         case .NextLevel:
             sceneMetadata = nextSceneMetadata
