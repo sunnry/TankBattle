@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A300BCB81BECAF8700F961E6 /* LevelSceneActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCB71BECAF8700F961E6 /* LevelSceneActiveState.swift */; };
+		A300BCBA1BECAFA500F961E6 /* LevelScenePauseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCB91BECAFA500F961E6 /* LevelScenePauseState.swift */; };
+		A300BCBC1BECAFFE00F961E6 /* LevelSceneSuccessState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCBB1BECAFFE00F961E6 /* LevelSceneSuccessState.swift */; };
+		A300BCBE1BECB01000F961E6 /* LevelSceneFailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCBD1BECB01000F961E6 /* LevelSceneFailState.swift */; };
 		A3021B461BE65FF6006AD451 /* SelectSceneButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */; };
 		A304BA031BE06B130082854C /* SceneConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = A304BA021BE06B130082854C /* SceneConfiguration.plist */; };
 		A304BA051BE097700082854C /* HomeEndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BA041BE097700082854C /* HomeEndScene.swift */; };
@@ -71,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A300BCB71BECAF8700F961E6 /* LevelSceneActiveState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneActiveState.swift; sourceTree = "<group>"; };
+		A300BCB91BECAFA500F961E6 /* LevelScenePauseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScenePauseState.swift; sourceTree = "<group>"; };
+		A300BCBB1BECAFFE00F961E6 /* LevelSceneSuccessState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneSuccessState.swift; sourceTree = "<group>"; };
+		A300BCBD1BECB01000F961E6 /* LevelSceneFailState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneFailState.swift; sourceTree = "<group>"; };
 		A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSceneButtonNode.swift; sourceTree = "<group>"; };
 		A304BA021BE06B130082854C /* SceneConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SceneConfiguration.plist; sourceTree = "<group>"; };
 		A304BA041BE097700082854C /* HomeEndScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEndScene.swift; sourceTree = "<group>"; };
@@ -148,6 +156,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A300BCB61BECAE4800F961E6 /* LevelScene States */ = {
+			isa = PBXGroup;
+			children = (
+				A300BCB71BECAF8700F961E6 /* LevelSceneActiveState.swift */,
+				A300BCB91BECAFA500F961E6 /* LevelScenePauseState.swift */,
+				A300BCBB1BECAFFE00F961E6 /* LevelSceneSuccessState.swift */,
+				A300BCBD1BECB01000F961E6 /* LevelSceneFailState.swift */,
+			);
+			name = "LevelScene States";
+			sourceTree = "<group>";
+		};
 		A304BA081BE09CDE0082854C /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +350,7 @@
 		A3F8CD571BDD0C120019C58C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A300BCB61BECAE4800F961E6 /* LevelScene States */,
 				A3579D5C1BDDF945004F9020 /* BaseScene.swift */,
 				A304BA041BE097700082854C /* HomeEndScene.swift */,
 				A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */,
@@ -522,6 +542,7 @@
 			files = (
 				A304BA051BE097700082854C /* HomeEndScene.swift in Sources */,
 				A3579D4B1BDDD7E2004F9020 /* GameConfiguration.swift in Sources */,
+				A300BCBA1BECAFA500F961E6 /* LevelScenePauseState.swift in Sources */,
 				A30D727C1BDEF87600BBA2EC /* LoadSceneOperation.swift in Sources */,
 				A3579D701BDE0896004F9020 /* SceneOverlay.swift in Sources */,
 				A3579D6A1BDE0072004F9020 /* SceneLoaderResourcesAvailableState.swift in Sources */,
@@ -530,8 +551,10 @@
 				A3579D4D1BDDDF3A004F9020 /* TouchControlInputNode.swift in Sources */,
 				A3579D741BDE0D4D004F9020 /* BaseScene+Buttons.swift in Sources */,
 				A304BA071BE097C60082854C /* LevelScene.swift in Sources */,
+				A300BCBE1BECB01000F961E6 /* LevelSceneFailState.swift in Sources */,
 				A3021B461BE65FF6006AD451 /* SelectSceneButtonNode.swift in Sources */,
 				A3579D591BDDF7F6004F9020 /* SceneManager.swift in Sources */,
+				A300BCBC1BECAFFE00F961E6 /* LevelSceneSuccessState.swift in Sources */,
 				A3F87C4D1BE5EBFF00C685CB /* SelectLevelScene.swift in Sources */,
 				A3579D5F1BDDFC4B004F9020 /* SceneLoader.swift in Sources */,
 				A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */,
@@ -539,6 +562,7 @@
 				A3579D4F1BDDE0A6004F9020 /* ThumbStickNode.swift in Sources */,
 				A3579D541BDDF465004F9020 /* GameInput.swift in Sources */,
 				A3579D5D1BDDF945004F9020 /* BaseScene.swift in Sources */,
+				A300BCB81BECAF8700F961E6 /* LevelSceneActiveState.swift in Sources */,
 				A3BB0F9C1BDB959D008D8C1A /* GameViewController.swift in Sources */,
 				A3579D721BDE0C9D004F9020 /* ButtonNode.swift in Sources */,
 				A3579D6C1BDE00C6004F9020 /* SceneLoaderPreparingResourcesState.swift in Sources */,

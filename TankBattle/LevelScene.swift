@@ -42,10 +42,52 @@ enum WorldLayer: CGFloat {
 
 class LevelScene: BaseScene{
     
+    var lastUpdateTimeInterval:NSTimeInterval = 0
+    
+    lazy var stateMachine:GKStateMachine = GKStateMachine(states: [
+            LevelSceneActiveState(scene:self),
+            LevelScenePauseState(scene:self),
+            LevelSceneSuccessState(scene:self),
+            LevelSceneFailState(scene:self)
+    ])
+
+    
+    
+    let timeNode = SKLabelNode(text: "--:--")
+    
+    private func scaleTimerNode(){
+        timeNode.fontSize = size.height * GameConfiguration.TimeConfig.fontSizeRate
+        timeNode.position.y = size.height - timeNode.frame.height
+        timeNode.position.y = timeNode.position.y - GameConfiguration.TimeConfig.paddingSize
+    }
+    
     override func didMoveToView(view: SKView) {
         super.didMoveToView(view)
         
+        //config timeNode
+        timeNode.zPosition = WorldLayer.AboveCharacters.rawValue
+        timeNode.fontColor = SKColor.whiteColor()
+        timeNode.fontName = GameConfiguration.TimeConfig.fontName
+        
+        scaleTimerNode()
+        
+        addChild(timeNode)
+        
+        stateMachine.enterState(LevelSceneActiveState)
+        
         print("show level scene")
         
+    }
+    
+    override func update(currentTime: NSTimeInterval) {
+        super.update(currentTime)
+        
+        var deltatime = currentTime - lastUpdateTimeInterval
+        
+        lastUpdateTimeInterval = currentTime
+        
+        deltatime = deltatime > GameConfiguration.TimeConfig.maxDeltaUpdateTime ? GameConfiguration.TimeConfig.maxDeltaUpdateTime : deltatime
+        
+        stateMachine.updateWithDeltaTime(deltatime)
     }
 }

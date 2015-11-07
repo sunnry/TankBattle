@@ -26,4 +26,17 @@ struct GameConfiguration {
     struct SceneManager {
         static let transitionDuration: NSTimeInterval = 2.0
     }
+    
+    struct TimeConfig {
+        static let fontName = "DINCondensed-Bold"
+        
+        static let fontSizeRate:CGFloat = 0.1
+        
+        static let paddingSize:CGFloat = 0.2
+        
+        static let timeLimit:NSTimeInterval = 240
+        
+        static let maxDeltaUpdateTime : NSTimeInterval = 1.0/60.0
+        
+    }
 }
