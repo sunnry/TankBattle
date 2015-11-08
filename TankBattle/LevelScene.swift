@@ -64,6 +64,8 @@ class LevelScene: BaseScene{
     override func didMoveToView(view: SKView) {
         super.didMoveToView(view)
         
+        registerForPauseNotifications()
+        
         //config timeNode
         timeNode.zPosition = WorldLayer.AboveCharacters.rawValue
         timeNode.fontColor = SKColor.whiteColor()
@@ -82,6 +84,7 @@ class LevelScene: BaseScene{
     override func update(currentTime: NSTimeInterval) {
         super.update(currentTime)
         
+        //caculate delta time need to updated
         var deltatime = currentTime - lastUpdateTimeInterval
         
         lastUpdateTimeInterval = currentTime

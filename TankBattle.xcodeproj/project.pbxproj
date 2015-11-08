@@ -17,6 +17,8 @@
 		A304BA071BE097C60082854C /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BA061BE097C60082854C /* LevelScene.swift */; };
 		A304BA0A1BE09D170082854C /* HomeScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A304BA091BE09D170082854C /* HomeScene.sks */; };
 		A304EF961BEC562E00CABDFC /* BaseScene+SelSceneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EF951BEC562E00CABDFC /* BaseScene+SelSceneButton.swift */; };
+		A308A40E1BEE2FF600D32596 /* PauseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A308A40D1BEE2FF600D32596 /* PauseScene.sks */; };
+		A308A4101BEE38E200D32596 /* LevelScene+Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308A40F1BEE38E200D32596 /* LevelScene+Pause.swift */; };
 		A30D727C1BDEF87600BBA2EC /* LoadSceneOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D727B1BDEF87600BBA2EC /* LoadSceneOperation.swift */; };
 		A30D727E1BDEF91F00BBA2EC /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D727D1BDEF91F00BBA2EC /* Operation.swift */; };
 		A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D727F1BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift */; };
@@ -55,6 +57,7 @@
 		A3F87C501BE5ECFC00C685CB /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */; };
 		A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */; };
 		A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */; };
+		A3FEFD181BEDE5290079D60D /* LevelSceneOverlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFD171BEDE5290079D60D /* LevelSceneOverlayState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,8 @@
 		A304BA061BE097C60082854C /* LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		A304BA091BE09D170082854C /* HomeScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HomeScene.sks; sourceTree = "<group>"; };
 		A304EF951BEC562E00CABDFC /* BaseScene+SelSceneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseScene+SelSceneButton.swift"; sourceTree = "<group>"; };
+		A308A40D1BEE2FF600D32596 /* PauseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PauseScene.sks; sourceTree = "<group>"; };
+		A308A40F1BEE38E200D32596 /* LevelScene+Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LevelScene+Pause.swift"; sourceTree = "<group>"; };
 		A30D727B1BDEF87600BBA2EC /* LoadSceneOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSceneOperation.swift; sourceTree = "<group>"; };
 		A30D727D1BDEF91F00BBA2EC /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		A30D727F1BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseScene+TouchEventForwarding.swift"; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 		A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectLevelScene.sks; sourceTree = "<group>"; };
 		A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerTank.xcassets; sourceTree = "<group>"; };
 		A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NormalTaskTank.xcassets; sourceTree = "<group>"; };
+		A3FEFD171BEDE5290079D60D /* LevelSceneOverlayState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneOverlayState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				A300BCB91BECAFA500F961E6 /* LevelScenePauseState.swift */,
 				A300BCBB1BECAFFE00F961E6 /* LevelSceneSuccessState.swift */,
 				A300BCBD1BECB01000F961E6 /* LevelSceneFailState.swift */,
+				A3FEFD171BEDE5290079D60D /* LevelSceneOverlayState.swift */,
 			);
 			name = "LevelScene States";
 			sourceTree = "<group>";
@@ -173,6 +180,14 @@
 				A304BA091BE09D170082854C /* HomeScene.sks */,
 			);
 			name = HomeScene;
+			sourceTree = "<group>";
+		};
+		A308A40C1BEE2FC100D32596 /* overlay scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A308A40D1BEE2FF600D32596 /* PauseScene.sks */,
+			);
+			name = "overlay scenes";
 			sourceTree = "<group>";
 		};
 		A3579D491BDDD790004F9020 /* Configurations */ = {
@@ -294,6 +309,7 @@
 		A3BB0FC81BDB961A008D8C1A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A308A40C1BEE2FC100D32596 /* overlay scenes */,
 				A304BA081BE09CDE0082854C /* HomeScene */,
 				A3F87C4E1BE5ECBA00C685CB /* SelectLevelScene */,
 				A3579D471BDDCCDE004F9020 /* Assets.xcassets */,
@@ -355,6 +371,7 @@
 				A304BA041BE097700082854C /* HomeEndScene.swift */,
 				A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */,
 				A304BA061BE097C60082854C /* LevelScene.swift */,
+				A308A40F1BEE38E200D32596 /* LevelScene+Pause.swift */,
 				A3579D6F1BDE0896004F9020 /* SceneOverlay.swift */,
 				A3579D731BDE0D4D004F9020 /* BaseScene+Buttons.swift */,
 				A304EF951BEC562E00CABDFC /* BaseScene+SelSceneButton.swift */,
@@ -512,6 +529,7 @@
 				A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */,
 				A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */,
 				A3F87C501BE5ECFC00C685CB /* SelectLevelScene.sks in Resources */,
+				A308A40E1BEE2FF600D32596 /* PauseScene.sks in Resources */,
 				A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */,
 				A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */,
 				A3579D481BDDCCDE004F9020 /* Assets.xcassets in Resources */,
@@ -544,6 +562,7 @@
 				A3579D4B1BDDD7E2004F9020 /* GameConfiguration.swift in Sources */,
 				A300BCBA1BECAFA500F961E6 /* LevelScenePauseState.swift in Sources */,
 				A30D727C1BDEF87600BBA2EC /* LoadSceneOperation.swift in Sources */,
+				A308A4101BEE38E200D32596 /* LevelScene+Pause.swift in Sources */,
 				A3579D701BDE0896004F9020 /* SceneOverlay.swift in Sources */,
 				A3579D6A1BDE0072004F9020 /* SceneLoaderResourcesAvailableState.swift in Sources */,
 				A3579D611BDDFDA5004F9020 /* ResourceLoadableType.swift in Sources */,
@@ -555,6 +574,7 @@
 				A3021B461BE65FF6006AD451 /* SelectSceneButtonNode.swift in Sources */,
 				A3579D591BDDF7F6004F9020 /* SceneManager.swift in Sources */,
 				A300BCBC1BECAFFE00F961E6 /* LevelSceneSuccessState.swift in Sources */,
+				A3FEFD181BEDE5290079D60D /* LevelSceneOverlayState.swift in Sources */,
 				A3F87C4D1BE5EBFF00C685CB /* SelectLevelScene.swift in Sources */,
 				A3579D5F1BDDFC4B004F9020 /* SceneLoader.swift in Sources */,
 				A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */,

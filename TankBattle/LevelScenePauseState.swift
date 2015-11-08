@@ -8,8 +8,21 @@
 
 import GameplayKit
 
-class LevelScenePauseState:GKState{
+class LevelScenePauseState:LevelSceneOverlayState{
+    
     init(scene:LevelScene){
-        
+        super.init(scene: scene, fileName: "PauseScene")
+    }
+    
+    override func isValidNextState(stateClass: AnyClass) -> Bool {
+        return stateClass is LevelSceneActiveState.Type
+    }
+    
+    override func didEnterWithPreviousState(previousState: GKState?) {
+        super.didEnterWithPreviousState(previousState)
+    }
+    
+    override func willExitWithNextState(nextState: GKState) {
+        super.willExitWithNextState(nextState)
     }
 }

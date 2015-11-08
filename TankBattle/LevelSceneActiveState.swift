@@ -42,5 +42,18 @@ class LevelSceneActiveState: GKState {
         super.updateWithDeltaTime(seconds)
         timeRemaining = timeRemaining - seconds
         levelScene.timeNode.text = timeRemainingString
+        
+        if timeRemaining <= 0.0{
+            stateMachine?.enterState(LevelSceneFailState)
+        }
+    }
+    
+    override func isValidNextState(stateClass: AnyClass) -> Bool {
+        switch stateClass{
+        case is LevelSceneSuccessState.Type,is LevelScenePauseState.Type,is LevelSceneFailState.Type:
+            return true
+        default:
+            return false
+        }
     }
 }

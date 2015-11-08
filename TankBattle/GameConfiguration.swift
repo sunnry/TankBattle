@@ -34,7 +34,7 @@ struct GameConfiguration {
         
         static let paddingSize:CGFloat = 0.2
         
-        static let timeLimit:NSTimeInterval = 240
+        static let timeLimit:NSTimeInterval = 30
         
         static let maxDeltaUpdateTime : NSTimeInterval = 1.0/60.0
         
