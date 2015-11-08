@@ -24,6 +24,10 @@ class SceneOverlay {
         let overlayScene = SKScene(fileNamed: fileName)!
         let contentTemplateNode = overlayScene.childNodeWithName("Overlay") as! SKSpriteNode
         
+        //IMPORT NOTES:
+        //i suddenly understand that why we will create a new backgroundNode and copy contentNode
+        //,it is because we just want to use scene editor to simplify overly design, but scene edit will only create a scene ,if we use scene directly we need to transform to overlay scene but if we only use Overlay spriteNode and copy a same one and add it to the level scene, it will only be a spriteNode and do not need to transform. this is a  important design idea!!!
+        
         // Create a background node with the same color as the template.
         backgroundNode = SKSpriteNode(color: contentTemplateNode.color, size: contentTemplateNode.size)
         backgroundNode.zPosition = zPosition
