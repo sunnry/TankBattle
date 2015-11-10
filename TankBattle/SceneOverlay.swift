@@ -35,6 +35,7 @@ class SceneOverlay {
         // Copy the template node into the background node.
         contentNode = contentTemplateNode.copy() as! SKSpriteNode
         contentNode.position = .zero
+            
         backgroundNode.addChild(contentNode)
         
         // Set the content node to a clear color to allow the background node to be seen through it.
