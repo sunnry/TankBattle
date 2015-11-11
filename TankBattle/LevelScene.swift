@@ -77,7 +77,9 @@ class LevelScene: BaseScene{
         
         stateMachine.enterState(LevelSceneActiveState)
         
-        print("show level scene")
+        
+        //add TouchInput to LevelScene
+        addTouchInputToScene()
         
     }
     

@@ -28,7 +28,6 @@ extension BaseScene {
         // Ensure the touch input source is not associated any other parent.
         touchControlInputNode.removeFromParent()
         
-        /* marked by sunnry
         if self is LevelScene {
             // Ensure the control node fills the scene's size.
             touchControlInputNode.size = size
@@ -48,6 +47,5 @@ extension BaseScene {
             // Make sure the controls are visible.
             touchControlInputNode.hideThumbStickNodes = false
         }
-        */
     }
 }
