@@ -8,9 +8,21 @@
 
 import GameplayKit
 
-class LevelSceneFailState:GKState{
+class LevelSceneFailState:LevelSceneOverlayState{
     
     init(scene:LevelScene){
-        
+        super.init(scene: scene, fileName: "FailScene")
+    }
+    
+    override func isValidNextState(stateClass: AnyClass) -> Bool {
+        return false
+    }
+    
+    override func didEnterWithPreviousState(previousState: GKState?) {
+        super.didEnterWithPreviousState(previousState)
+    }
+    
+    override func willExitWithNextState(nextState: GKState) {
+        super.willExitWithNextState(nextState)
     }
 }

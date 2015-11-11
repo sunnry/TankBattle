@@ -59,6 +59,9 @@
 		A3F87C501BE5ECFC00C685CB /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */; };
 		A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */; };
 		A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */; };
+		A3FA0F341BF1CD6800CAA4E2 /* FailScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A3FA0F331BF1CD6800CAA4E2 /* FailScene.sks */; };
+		A3FA0F361BF1D0D100CAA4E2 /* RetryButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA0F351BF1D0D100CAA4E2 /* RetryButtonNode.swift */; };
+		A3FA0F381BF1D24A00CAA4E2 /* LevelScene+RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA0F371BF1D24A00CAA4E2 /* LevelScene+RetryButton.swift */; };
 		A3FEFD181BEDE5290079D60D /* LevelSceneOverlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FEFD171BEDE5290079D60D /* LevelSceneOverlayState.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +141,9 @@
 		A3F87C4F1BE5ECFC00C685CB /* SelectLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectLevelScene.sks; sourceTree = "<group>"; };
 		A3F8CD5D1BDD14F00019C58C /* PlayerTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerTank.xcassets; sourceTree = "<group>"; };
 		A3F8CD611BDD15BF0019C58C /* NormalTaskTank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NormalTaskTank.xcassets; sourceTree = "<group>"; };
+		A3FA0F331BF1CD6800CAA4E2 /* FailScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FailScene.sks; sourceTree = "<group>"; };
+		A3FA0F351BF1D0D100CAA4E2 /* RetryButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryButtonNode.swift; sourceTree = "<group>"; };
+		A3FA0F371BF1D24A00CAA4E2 /* LevelScene+RetryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LevelScene+RetryButton.swift"; sourceTree = "<group>"; };
 		A3FEFD171BEDE5290079D60D /* LevelSceneOverlayState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneOverlayState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				A308A40D1BEE2FF600D32596 /* PauseScene.sks */,
+				A3FA0F331BF1CD6800CAA4E2 /* FailScene.sks */,
 			);
 			name = "overlay scenes";
 			sourceTree = "<group>";
@@ -380,6 +387,7 @@
 				A3579D731BDE0D4D004F9020 /* BaseScene+Buttons.swift */,
 				A304EF951BEC562E00CABDFC /* BaseScene+SelSceneButton.swift */,
 				A3F86A7A1BF03E5500888F42 /* LevelScene+ResumeButton.swift */,
+				A3FA0F371BF1D24A00CAA4E2 /* LevelScene+RetryButton.swift */,
 				A3579D751BDE0DDA004F9020 /* BaseScene+Focus.swift */,
 			);
 			name = Scenes;
@@ -407,6 +415,7 @@
 				A3579D711BDE0C9D004F9020 /* ButtonNode.swift */,
 				A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */,
 				A3F86A781BF03D0C00888F42 /* ResumeButtonNode.swift */,
+				A3FA0F351BF1D0D100CAA4E2 /* RetryButtonNode.swift */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -535,6 +544,7 @@
 				A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */,
 				A3579D061BDDBE1B004F9020 /* Level1.sks in Resources */,
 				A3F87C501BE5ECFC00C685CB /* SelectLevelScene.sks in Resources */,
+				A3FA0F341BF1CD6800CAA4E2 /* FailScene.sks in Resources */,
 				A308A40E1BEE2FF600D32596 /* PauseScene.sks in Resources */,
 				A3F8CD621BDD15BF0019C58C /* NormalTaskTank.xcassets in Resources */,
 				A3F8CD5E1BDD14F00019C58C /* PlayerTank.xcassets in Resources */,
@@ -566,10 +576,12 @@
 			files = (
 				A304BA051BE097700082854C /* HomeEndScene.swift in Sources */,
 				A3579D4B1BDDD7E2004F9020 /* GameConfiguration.swift in Sources */,
+				A3FA0F381BF1D24A00CAA4E2 /* LevelScene+RetryButton.swift in Sources */,
 				A300BCBA1BECAFA500F961E6 /* LevelScenePauseState.swift in Sources */,
 				A30D727C1BDEF87600BBA2EC /* LoadSceneOperation.swift in Sources */,
 				A308A4101BEE38E200D32596 /* LevelScene+Pause.swift in Sources */,
 				A3579D701BDE0896004F9020 /* SceneOverlay.swift in Sources */,
+				A3FA0F361BF1D0D100CAA4E2 /* RetryButtonNode.swift in Sources */,
 				A3579D6A1BDE0072004F9020 /* SceneLoaderResourcesAvailableState.swift in Sources */,
 				A3F86A791BF03D0C00888F42 /* ResumeButtonNode.swift in Sources */,
 				A3579D611BDDFDA5004F9020 /* ResourceLoadableType.swift in Sources */,
