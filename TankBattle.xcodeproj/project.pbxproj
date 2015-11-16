@@ -11,6 +11,9 @@
 		A300BCBA1BECAFA500F961E6 /* LevelScenePauseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCB91BECAFA500F961E6 /* LevelScenePauseState.swift */; };
 		A300BCBC1BECAFFE00F961E6 /* LevelSceneSuccessState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCBB1BECAFFE00F961E6 /* LevelSceneSuccessState.swift */; };
 		A300BCBE1BECB01000F961E6 /* LevelSceneFailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300BCBD1BECB01000F961E6 /* LevelSceneFailState.swift */; };
+		A301AFBF1BF58F54000E8A26 /* PlayerTank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301AFBE1BF58F54000E8A26 /* PlayerTank.swift */; };
+		A301AFC11BF591DB000E8A26 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301AFC01BF591DB000E8A26 /* AnimationComponent.swift */; };
+		A301AFC31BF594D3000E8A26 /* CompassDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301AFC21BF594D3000E8A26 /* CompassDirection.swift */; };
 		A3021B461BE65FF6006AD451 /* SelectSceneButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */; };
 		A304BA031BE06B130082854C /* SceneConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = A304BA021BE06B130082854C /* SceneConfiguration.plist */; };
 		A304BA051BE097700082854C /* HomeEndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BA041BE097700082854C /* HomeEndScene.swift */; };
@@ -53,6 +56,8 @@
 		A3BB0FA41BDB959D008D8C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BB0FA21BDB959D008D8C1A /* LaunchScreen.storyboard */; };
 		A3BB0FAF1BDB959D008D8C1A /* TankBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0FAE1BDB959D008D8C1A /* TankBattleTests.swift */; };
 		A3BB0FBA1BDB959D008D8C1A /* TankBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB0FB91BDB959D008D8C1A /* TankBattleUITests.swift */; };
+		A3F730AC1BF9AECB00786539 /* RenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F730AB1BF9AECB00786539 /* RenderComponent.swift */; };
+		A3F730AE1BF9AFD300786539 /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F730AD1BF9AFD300786539 /* EntityNode.swift */; };
 		A3F86A791BF03D0C00888F42 /* ResumeButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F86A781BF03D0C00888F42 /* ResumeButtonNode.swift */; };
 		A3F86A7B1BF03E5500888F42 /* LevelScene+ResumeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F86A7A1BF03E5500888F42 /* LevelScene+ResumeButton.swift */; };
 		A3F87C4D1BE5EBFF00C685CB /* SelectLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */; };
@@ -89,6 +94,9 @@
 		A300BCB91BECAFA500F961E6 /* LevelScenePauseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScenePauseState.swift; sourceTree = "<group>"; };
 		A300BCBB1BECAFFE00F961E6 /* LevelSceneSuccessState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneSuccessState.swift; sourceTree = "<group>"; };
 		A300BCBD1BECB01000F961E6 /* LevelSceneFailState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSceneFailState.swift; sourceTree = "<group>"; };
+		A301AFBE1BF58F54000E8A26 /* PlayerTank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTank.swift; sourceTree = "<group>"; };
+		A301AFC01BF591DB000E8A26 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		A301AFC21BF594D3000E8A26 /* CompassDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassDirection.swift; sourceTree = "<group>"; };
 		A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSceneButtonNode.swift; sourceTree = "<group>"; };
 		A304BA021BE06B130082854C /* SceneConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SceneConfiguration.plist; sourceTree = "<group>"; };
 		A304BA041BE097700082854C /* HomeEndScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEndScene.swift; sourceTree = "<group>"; };
@@ -137,6 +145,8 @@
 		A3BB0FB51BDB959D008D8C1A /* TankBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TankBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BB0FB91BDB959D008D8C1A /* TankBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankBattleUITests.swift; sourceTree = "<group>"; };
 		A3BB0FBB1BDB959D008D8C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F730AB1BF9AECB00786539 /* RenderComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderComponent.swift; sourceTree = "<group>"; };
+		A3F730AD1BF9AFD300786539 /* EntityNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
 		A3F86A781BF03D0C00888F42 /* ResumeButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeButtonNode.swift; sourceTree = "<group>"; };
 		A3F86A7A1BF03E5500888F42 /* LevelScene+ResumeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LevelScene+ResumeButton.swift"; sourceTree = "<group>"; };
 		A3F87C4C1BE5EBFF00C685CB /* SelectLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelScene.swift; sourceTree = "<group>"; };
@@ -401,6 +411,7 @@
 		A3F8CD581BDD0C450019C58C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A301AFBE1BF58F54000E8A26 /* PlayerTank.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -408,6 +419,9 @@
 		A3F8CD591BDD0F5B0019C58C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A301AFC01BF591DB000E8A26 /* AnimationComponent.swift */,
+				A301AFC21BF594D3000E8A26 /* CompassDirection.swift */,
+				A3F730AB1BF9AECB00786539 /* RenderComponent.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -422,6 +436,7 @@
 				A3F86A781BF03D0C00888F42 /* ResumeButtonNode.swift */,
 				A3FA0F351BF1D0D100CAA4E2 /* RetryButtonNode.swift */,
 				A3FCB3191BF2E1CC00F7FB15 /* CancelButtonNode.swift */,
+				A3F730AD1BF9AFD300786539 /* EntityNode.swift */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -580,8 +595,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A301AFC11BF591DB000E8A26 /* AnimationComponent.swift in Sources */,
 				A304BA051BE097700082854C /* HomeEndScene.swift in Sources */,
 				A3579D4B1BDDD7E2004F9020 /* GameConfiguration.swift in Sources */,
+				A301AFBF1BF58F54000E8A26 /* PlayerTank.swift in Sources */,
+				A3F730AE1BF9AFD300786539 /* EntityNode.swift in Sources */,
 				A3FA0F381BF1D24A00CAA4E2 /* LevelScene+RetryButton.swift in Sources */,
 				A300BCBA1BECAFA500F961E6 /* LevelScenePauseState.swift in Sources */,
 				A30D727C1BDEF87600BBA2EC /* LoadSceneOperation.swift in Sources */,
@@ -600,6 +618,7 @@
 				A3579D591BDDF7F6004F9020 /* SceneManager.swift in Sources */,
 				A300BCBC1BECAFFE00F961E6 /* LevelSceneSuccessState.swift in Sources */,
 				A3FEFD181BEDE5290079D60D /* LevelSceneOverlayState.swift in Sources */,
+				A301AFC31BF594D3000E8A26 /* CompassDirection.swift in Sources */,
 				A3F87C4D1BE5EBFF00C685CB /* SelectLevelScene.swift in Sources */,
 				A3579D5F1BDDFC4B004F9020 /* SceneLoader.swift in Sources */,
 				A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */,
@@ -612,6 +631,7 @@
 				A3579D721BDE0C9D004F9020 /* ButtonNode.swift in Sources */,
 				A3579D6C1BDE00C6004F9020 /* SceneLoaderPreparingResourcesState.swift in Sources */,
 				A3579D6E1BDE0158004F9020 /* SceneLoaderResourcesReadyState.swift in Sources */,
+				A3F730AC1BF9AECB00786539 /* RenderComponent.swift in Sources */,
 				A3579D561BDDF50F004F9020 /* GameControllerInputSource.swift in Sources */,
 				A3579D661BDDFFC8004F9020 /* SceneLoaderDownloadingResourcesState.swift in Sources */,
 				A3F86A7B1BF03E5500888F42 /* LevelScene+ResumeButton.swift in Sources */,
