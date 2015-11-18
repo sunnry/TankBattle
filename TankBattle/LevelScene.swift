@@ -51,9 +51,20 @@ class LevelScene: BaseScene{
             LevelSceneFailState(scene:self)
     ])
 
-    
-    
     let timeNode = SKLabelNode(text: "--:--")
+    
+    var worldLayerNodes = [WorldLayer:SKNode]()
+
+    lazy var componentSystems:[GKComponentSystem] = {
+        let animationSystem = GKComponentSystem(componentClass: AnimationComponent.self)
+        
+        return [animationSystem]
+    }()
+    
+    var entities = Set<GKEntity>()
+    
+    let playerTank = PlayerTank()
+    
     
     private func scaleTimerNode(){
         timeNode.fontSize = size.height * GameConfiguration.TimeConfig.fontSizeRate
@@ -78,6 +89,7 @@ class LevelScene: BaseScene{
         stateMachine.enterState(LevelSceneActiveState)
         
         
+        //addEntity(playerTank)
         //add TouchInput to LevelScene
         addTouchInputToScene()
         
@@ -95,4 +107,23 @@ class LevelScene: BaseScene{
         
         stateMachine.updateWithDeltaTime(deltatime)
     }
+
+    func addNode(node:SKNode,toWorldLayer worldLayer:WorldLayer){
+        let worldLayerNode = worldLayerNodes[worldLayer]!
+        worldLayerNode.addChild(node)
+    }
+    
+    func addEntity(entity:GKEntity){
+        entities.insert(entity)
+        
+        for componentSystem in self.componentSystems{
+            componentSystem.addComponentWithEntity(entity)
+        }
+        
+        if let renderNode = entity.componentForClass(RenderComponent.self)?.node{
+            addNode(renderNode, toWorldLayer: .Characters)
+        }
+    }
+   
+    
 }

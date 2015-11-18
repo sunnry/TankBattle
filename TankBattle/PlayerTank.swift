@@ -34,15 +34,22 @@ class PlayerTank: GKEntity, ResourceLoadableType {
         renderComponent.node.addChild(animationComponent.node)
         
     }
-    
+ 
     static func loadResourcesWithCompletionHandler(completionHandler: () -> ()) {
+
         let playerTankAtlasNames = ["PlayerTankIdle","PlayerTankRun"]
-        
-        SKTextureAtlas.preloadTextureAtlasesNamed(playerTankAtlasNames){error,playerTankAtlases in
+        /*
+        Preload all of the texture atlases for `FlyingBot`. This improves
+        the overall loading speed of the animation cycles for this character.
+        */
+        SKTextureAtlas.preloadTextureAtlasesNamed(playerTankAtlasNames) { error, playerTankAtlases in
             if let error = error {
-                fatalError("load playerTank atlases has problem")
+                fatalError("One or more texture atlases could not be found: \(error)")
             }
-            
+            /*
+            This closure sets up all of the `FlyingBot` animations
+            after the `FlyingBot` texture atlases have finished preloading.
+            */
             appearTextures = [:]
             
             for orientation in CompassDirection.allDirections{
@@ -52,10 +59,10 @@ class PlayerTank: GKEntity, ResourceLoadableType {
             animations = [:]
             animations![.Idle] = AnimationComponent.animationFromAtlas(playerTankAtlases[0], withImageIdentifier: "PlayerTankIdle", forAnimationState: .Idle)
             animations![.Run] = AnimationComponent.animationFromAtlas(playerTankAtlases[1], withImageIdentifier: "PlayerTankRun", forAnimationState: .Run)
+            completionHandler()
         }
-        
-        completionHandler()
     }
+  
     
     static var resourcesNeedLoading:Bool{
         return appearTextures == nil || animations == nil

@@ -19,6 +19,10 @@
 		<string>LevelScene</string>
 		<key>fileName</key>
 		<string>Level1</string>
+		<key>onDemandResourcesTags</key>
+		<array>
+			<string>PlayerTank</string>
+		</array>
 	</dict>
 	<dict>
 		<key>sceneType</key>

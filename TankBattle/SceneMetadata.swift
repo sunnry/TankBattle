@@ -75,10 +75,9 @@ struct SceneMetadata {
             */
             loadableTypesForScene += tags.flatMap { tag in
                 switch tag {
-                /* marked by sunnry
-                case "GroundBot":
-                    return GroundBot.self
-                    
+                case "PlayerTank":
+                    return PlayerTank.self
+                /*
                 case "FlyingBot":
                     return FlyingBot.self
                 */
