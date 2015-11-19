@@ -77,6 +77,8 @@ class LevelScene: BaseScene{
         
         registerForPauseNotifications()
         
+        loadWorldLayers()
+        
         //config timeNode
         timeNode.zPosition = WorldLayer.AboveCharacters.rawValue
         timeNode.fontColor = SKColor.whiteColor()
@@ -92,6 +94,21 @@ class LevelScene: BaseScene{
         //addEntity(playerTank)
         //add TouchInput to LevelScene
         addTouchInputToScene()
+        
+    }
+    
+    func loadWorldLayers(){
+        
+        for layer in WorldLayer.allLayers{
+            let foundLayer = self["world/\(layer.nodeName)"]
+
+            precondition(!foundLayer.isEmpty,"can not found node of \(layer.nodeName)")
+            
+            let layerNode = foundLayer.first!
+            layerNode.zPosition = layer.rawValue
+            
+            worldLayerNodes[layer] = layerNode
+        }
         
     }
     
