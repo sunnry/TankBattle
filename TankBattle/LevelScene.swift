@@ -91,7 +91,7 @@ class LevelScene: BaseScene{
         stateMachine.enterState(LevelSceneActiveState)
         
         
-        //addEntity(playerTank)
+        addEntity(playerTank)
         //add TouchInput to LevelScene
         addTouchInputToScene()
         
@@ -139,6 +139,10 @@ class LevelScene: BaseScene{
         
         if let renderNode = entity.componentForClass(RenderComponent.self)?.node{
             addNode(renderNode, toWorldLayer: .Characters)
+        }
+        
+        if let intelligenceComponent = entity.componentForClass(IntelligenceComponent.self){
+            intelligenceComponent.enterInitialState()
         }
     }
    

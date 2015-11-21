@@ -16,4 +16,24 @@ enum CompassDirection:Int{
     
     static let allDirections:[CompassDirection] =
         [ .East,.North,.West,.South]
+    
+    var zRotation:CGFloat{
+        let stepSize = CGFloat(M_PI * 2.0) / CGFloat(CompassDirection.allDirections.count)
+        
+        return CGFloat(self.rawValue) * stepSize
+    }
+    
+    init(zPositon:CGFloat){
+        let twoPi = M_PI * 2
+        
+        let rotation = (Double(zPositon) + twoPi) % twoPi
+        
+        let orientation = rotation / twoPi
+        
+        let rawFacingValue = round(orientation * Double(CompassDirection.allDirections.count)) / Double(CompassDirection.allDirections.count)
+        
+        self = CompassDirection(rawValue:Int(rawFacingValue))!
+    }
 }
+
+

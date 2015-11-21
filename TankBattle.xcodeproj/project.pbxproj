@@ -15,6 +15,7 @@
 		A301AFC11BF591DB000E8A26 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301AFC01BF591DB000E8A26 /* AnimationComponent.swift */; };
 		A301AFC31BF594D3000E8A26 /* CompassDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301AFC21BF594D3000E8A26 /* CompassDirection.swift */; };
 		A3021B461BE65FF6006AD451 /* SelectSceneButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */; };
+		A303E4BF1BFDAEC4000D3829 /* IntelligenceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A303E4BE1BFDAEC4000D3829 /* IntelligenceComponent.swift */; };
 		A304BA031BE06B130082854C /* SceneConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = A304BA021BE06B130082854C /* SceneConfiguration.plist */; };
 		A304BA051BE097700082854C /* HomeEndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BA041BE097700082854C /* HomeEndScene.swift */; };
 		A304BA071BE097C60082854C /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304BA061BE097C60082854C /* LevelScene.swift */; };
@@ -22,6 +23,8 @@
 		A304EF961BEC562E00CABDFC /* BaseScene+SelSceneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EF951BEC562E00CABDFC /* BaseScene+SelSceneButton.swift */; };
 		A308A40E1BEE2FF600D32596 /* PauseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A308A40D1BEE2FF600D32596 /* PauseScene.sks */; };
 		A308A4101BEE38E200D32596 /* LevelScene+Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308A40F1BEE38E200D32596 /* LevelScene+Pause.swift */; };
+		A308CAC31BFEC9D40074926E /* PlayerTankAppearState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308CAC21BFEC9D40074926E /* PlayerTankAppearState.swift */; };
+		A308CAC51BFED1C40074926E /* OrientationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308CAC41BFED1C40074926E /* OrientationComponent.swift */; };
 		A30D727C1BDEF87600BBA2EC /* LoadSceneOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D727B1BDEF87600BBA2EC /* LoadSceneOperation.swift */; };
 		A30D727E1BDEF91F00BBA2EC /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D727D1BDEF91F00BBA2EC /* Operation.swift */; };
 		A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D727F1BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift */; };
@@ -98,6 +101,7 @@
 		A301AFC01BF591DB000E8A26 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
 		A301AFC21BF594D3000E8A26 /* CompassDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassDirection.swift; sourceTree = "<group>"; };
 		A3021B451BE65FF6006AD451 /* SelectSceneButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSceneButtonNode.swift; sourceTree = "<group>"; };
+		A303E4BE1BFDAEC4000D3829 /* IntelligenceComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntelligenceComponent.swift; sourceTree = "<group>"; };
 		A304BA021BE06B130082854C /* SceneConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SceneConfiguration.plist; sourceTree = "<group>"; };
 		A304BA041BE097700082854C /* HomeEndScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEndScene.swift; sourceTree = "<group>"; };
 		A304BA061BE097C60082854C /* LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		A304EF951BEC562E00CABDFC /* BaseScene+SelSceneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseScene+SelSceneButton.swift"; sourceTree = "<group>"; };
 		A308A40D1BEE2FF600D32596 /* PauseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PauseScene.sks; sourceTree = "<group>"; };
 		A308A40F1BEE38E200D32596 /* LevelScene+Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LevelScene+Pause.swift"; sourceTree = "<group>"; };
+		A308CAC21BFEC9D40074926E /* PlayerTankAppearState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTankAppearState.swift; sourceTree = "<group>"; };
+		A308CAC41BFED1C40074926E /* OrientationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationComponent.swift; sourceTree = "<group>"; };
 		A30D727B1BDEF87600BBA2EC /* LoadSceneOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSceneOperation.swift; sourceTree = "<group>"; };
 		A30D727D1BDEF91F00BBA2EC /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		A30D727F1BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseScene+TouchEventForwarding.swift"; sourceTree = "<group>"; };
@@ -213,6 +219,14 @@
 				A3FA0F331BF1CD6800CAA4E2 /* FailScene.sks */,
 			);
 			name = "overlay scenes";
+			sourceTree = "<group>";
+		};
+		A308CAC11BFEC9880074926E /* IntelligenceComponent States */ = {
+			isa = PBXGroup;
+			children = (
+				A308CAC21BFEC9D40074926E /* PlayerTankAppearState.swift */,
+			);
+			name = "IntelligenceComponent States";
 			sourceTree = "<group>";
 		};
 		A3579D491BDDD790004F9020 /* Configurations */ = {
@@ -421,7 +435,10 @@
 			children = (
 				A301AFC01BF591DB000E8A26 /* AnimationComponent.swift */,
 				A301AFC21BF594D3000E8A26 /* CompassDirection.swift */,
+				A308CAC41BFED1C40074926E /* OrientationComponent.swift */,
 				A3F730AB1BF9AECB00786539 /* RenderComponent.swift */,
+				A303E4BE1BFDAEC4000D3829 /* IntelligenceComponent.swift */,
+				A308CAC11BFEC9880074926E /* IntelligenceComponent States */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -626,10 +643,13 @@
 				A3579D5F1BDDFC4B004F9020 /* SceneLoader.swift in Sources */,
 				A30D72801BDEF9C200BBA2EC /* BaseScene+TouchEventForwarding.swift in Sources */,
 				A3579D5B1BDDF874004F9020 /* SceneMetadata.swift in Sources */,
+				A308CAC51BFED1C40074926E /* OrientationComponent.swift in Sources */,
 				A3579D4F1BDDE0A6004F9020 /* ThumbStickNode.swift in Sources */,
 				A3579D541BDDF465004F9020 /* GameInput.swift in Sources */,
+				A308CAC31BFEC9D40074926E /* PlayerTankAppearState.swift in Sources */,
 				A3579D5D1BDDF945004F9020 /* BaseScene.swift in Sources */,
 				A300BCB81BECAF8700F961E6 /* LevelSceneActiveState.swift in Sources */,
+				A303E4BF1BFDAEC4000D3829 /* IntelligenceComponent.swift in Sources */,
 				A3BB0F9C1BDB959D008D8C1A /* GameViewController.swift in Sources */,
 				A3579D721BDE0C9D004F9020 /* ButtonNode.swift in Sources */,
 				A3579D6C1BDE00C6004F9020 /* SceneLoaderPreparingResourcesState.swift in Sources */,

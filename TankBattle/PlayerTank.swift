@@ -28,10 +28,16 @@ class PlayerTank: GKEntity, ResourceLoadableType {
             fatalError("try to access playerTank animation before load it!")
         }
         
+        let orientationComponent = OrientationComponent()
+        addComponent(orientationComponent)
+        
         let animationComponent = AnimationComponent(textureSize: PlayerTank.textureSize, animations:animations)
         addComponent(animationComponent)
         
         renderComponent.node.addChild(animationComponent.node)
+        
+        let intelligenceComponent = IntelligenceComponent(states: [PlayerTankAppearState(entity: self)])
+        addComponent(intelligenceComponent)
         
     }
  
